@@ -1,132 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Luke Chamandy — astrophysicist at NISER">
-  <title>Luke Chamandy | Astrophysics</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Astrophysics</title>
+  <meta name="description" content="Homepage of Luke Chamandy, astrophysicist at NISER. Research, publications, talks and group information.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <div>
-      <h1>Luke Chamandy</h1>
-      <p class="subtitle">Astrophysicist · School of Physical Sciences · NISER</p>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="wrap">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="bio.html">Bio</a></li>
+      </ul>
     </div>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#software">Software</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  </nav>
 
-<main class="container">
-  <section class="hero">
-    <div>
-      <p class="eyebrow">ASTROPHYSICS</p>
-      <h2>Understanding astrophysical fluids, magnetic fields, and interacting stars.</h2>
-      <p class="lead">
-        I am a Reader in the School of Physical Sciences at the National Institute
-        of Science Education and Research (NISER), Bhubaneswar.
-      </p>
-      <div class="buttons">
-        <a class="button" href="#research">Research</a>
-        <a class="button secondary" href="cv.html">CV</a>
-      </div>
+  <header class="hero wrap">
+    <h1>Dr. Your Name</h1>
+    <p class="role">Position title</p>
+    <p class="affiliation">School of Physical Sciences, National Institute of Science Education and Research (NISER)</p>
+
+    <ul class="link-row" aria-label="Contact and profiles">
+      <li><a href="mailto:lchamandy@niser.ac.in">Email</a></li>
+      <li><a href="https://ui.adsabs.harvard.edu/">ADS</a></li>
+      <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+      <li><a href="https://orcid.org/">ORCID</a></li>
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><a href="https://github.com/">GitHub</a></li>
+    </ul>
+
+    <a class="button" href="cv/Curriculum_Vitae.pdf">Download CV</a>
+  </header>
+
+  <main class="wrap">
+
+    <section class="block" aria-label="Site sections">
+      <ul class="section-list">
+        <li>
+          <a href="research.html">
+            <span class="section-title">Research</span>
+            <span class="section-desc">One-sentence summary of your main research themes.</span>
+          </a>
+        </li>
+        <li>
+          <a href="publications.html">
+            <span class="section-title">Publications</span>
+            <span class="section-desc">XX refereed publications, X first-author, XXXX citations, h-index = XX.</span>
+          </a>
+        </li>
+        <li>
+          <a href="talks.html">
+            <span class="section-title">Talks &amp; presentations</span>
+            <span class="section-desc">Invited seminars, conference talks and colloquia.</span>
+          </a>
+        </li>
+        <li>
+          <a href="students.html">
+            <span class="section-title">Current &amp; past students</span>
+            <span class="section-desc">Student projects and where they went next.</span>
+          </a>
+        </li>
+        <li>
+          <a href="bio.html">
+            <span class="section-title">Brief bio</span>
+            <span class="section-desc">Education, positions and a short professional summary.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block" id="opportunities">
+      <h2>Opportunities</h2>
+      <p>Describe who you are looking for (PhD students, postdocs, project students) and the research questions that might interest them.</p>
+      <p>For PhD and postdoc positions, point to the official <a href="https://www.niser.ac.in/">NISER admissions and recruitment pages</a>. For short-term projects, say what to include in an email: CV, transcript, prior research experience, courses completed, research interests and preferred duration.</p>
+      <p><a href="mailto:your.email@niser.ac.in">your.email@niser.ac.in</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Have questions about my research or astronomy in general? Feel free to email me.</p>
+      <p>Your Name &copy; 2026. All rights reserved.</p>
+      <ul>
+        <li><a href="mailto:your.email@niser.ac.in">Email</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+      </ul>
     </div>
-  </section>
+  </footer>
 
-  <section id="research">
-    <h2>Research</h2>
-    <div class="cards">
-      <article>
-        <h3>Common-envelope evolution</h3>
-        <p>Hydrodynamics, orbital evolution, drag, jets, and the physics of interacting binary stars during common-envelope phases.</p>
-      </article>
-      <article>
-        <h3>Galactic magnetism</h3>
-        <p>Galactic dynamos, magnetic-field structure, synchrotron emission, Faraday rotation, and the evolution of magnetic fields in galaxies.</p>
-      </article>
-      <article>
-        <h3>Astrophysical fluids & plasmas</h3>
-        <p>Computational studies of fluid and plasma processes relevant to stars, binaries, galaxies, and the interstellar medium.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Selected publications</h2>
-    <ol class="publications">
-      <li>
-        <strong>Radio Continuum Emission from Evolving Star-Forming Galaxies I: Correlations Involving the Total Synchrotron Luminosity.</strong>
-        <span>Astrophysical Journal.</span>
-        <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">ADS</a>
-      </li>
-      <li>
-        <strong>Chamandy et al.</strong>
-        <span>Astrophysical Journal, 966, 78.</span>
-        <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">ADS</a>
-      </li>
-      <li>
-        <strong>Chamandy et al.</strong>
-        <span>Monthly Notices of the Royal Astronomical Society, 528, 234.</span>
-        <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">ADS</a>
-      </li>
-      <li>
-        <strong>Chamandy et al.</strong>
-        <span>Publications of the Astronomical Society of Australia, 42, e27.</span>
-        <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">ADS</a>
-      </li>
-    </ol>
-    <p class="note">A complete publication list can be added here from your ORCID/ADS record.</p>
-  </section>
-
-  <section id="software">
-    <h2>Research software</h2>
-    <div class="software-list">
-      <div>
-        <h3>MAGNETIZER</h3>
-        <p>A computational framework for modelling galactic magnetic fields and related observables.</p>
-        <a href="https://zenodo.org/" target="_blank" rel="noopener">Zenodo</a>
-      </div>
-      <div>
-        <h3>GOBLIN</h3>
-        <p>Research software developed for astrophysical computational work.</p>
-        <a href="https://zenodo.org/" target="_blank" rel="noopener">Zenodo</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <p>
-      I teach physics at NISER, including undergraduate physics courses covering
-      mechanics, electromagnetism, special relativity, quantum mechanics, and thermodynamics.
-    </p>
-    <p><a href="teaching.html">Teaching materials →</a></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      <strong>Luke Chamandy</strong><br>
-      School of Physical Sciences<br>
-      National Institute of Science Education and Research (NISER)<br>
-      Jatni, Khurda, Odisha, India
-    </p>
-    <p>
-      <a href="mailto:lchamandy@gmail.com">lchamandy@gmail.com</a>
-      · <a href="https://orcid.org/0000-0003-4935-5550" target="_blank" rel="noopener">ORCID</a>
-    </p>
-  </section>
-</main>
-
-<footer>
-  <div class="container">© 2026 Luke Chamandy</div>
-</footer>
 </body>
 </html>
