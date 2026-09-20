@@ -1,59 +1,46 @@
 # Academic homepage (GitHub Pages)
 
-A plain HTML/CSS site with no build step. Pages:
+Plain HTML and CSS with no build step. It uses Bootstrap 5, Font Awesome and the Poppins font, loaded from public CDNs, so the pages need an internet connection to look right.
 
 | File | Purpose |
 |---|---|
-| `index.html` | Home: name, affiliation, profile links, CV button, section list, opportunities |
-| `research.html` | Overview, jump links, and one section per research theme (text, key papers, figure) |
+| `index.html` | Home: banner, section cards, opportunities, contact, footer |
+| `research.html` | Overview cards, jump chips, and one section per research theme |
 | `publications.html` | Publications grouped by year |
 | `talks.html` | Talks grouped by year |
 | `students.html` | Current and past students |
 | `bio.html` | Short bio, positions, education |
-| `assets/style.css` | All styling. Colours and fonts are variables at the top |
-| `images/` | Your figures. `placeholder.svg` is a stand-in |
+| `assets/style.css` | All custom styling. Colours are variables at the top |
+| `images/` | Your figures and photos. `placeholder.svg` is a stand-in |
 | `cv/` | Put your CV here as `Curriculum_Vitae.pdf` |
 
-## 1. Fill in your details
+## Updating an existing repo
 
-Search all files for these strings and replace them:
+Replace these files (upload with the same names and paths, then commit):
+`index.html`, `research.html`, `publications.html`, `talks.html`, `students.html`, `bio.html`, `assets/style.css`, `images/placeholder.svg`.
 
-- `Your Name`
-- `your.email@niser.ac.in`
+## Fill in your details
+
+Search all files for these and replace them:
+
 - `Position title`
-- `XX` / `XXXX` / `20XX` (publication counts, dates)
-- Profile links: ADS, Google Scholar, ORCID, LinkedIn and GitHub URLs (in `index.html` and the footers)
+- `XX`, `XXXX`, `20XX` (counts, dates)
+- The ADS, Google Scholar, ORCID and LinkedIn links (in `index.html` and the footers)
+- All the placeholder text on each page
 
-Then edit the text on each page. In `research.html`, copy a whole `<section class="theme">` block to add a theme, and add a matching link to the `chips` list at the top.
+In `research.html`, copy a whole `<section class="research-theme">` block to add a theme, and add a matching chip in the `theme-nav` section.
 
-## 2. Publish on GitHub
+## Photos (optional)
 
-1. Create a **public** repository named exactly `YOUR-GITHUB-USERNAME.github.io`.
-2. Upload every file and folder from this directory to the repository root (including the hidden `.nojekyll` file).
-3. In the repository, open **Settings > Pages**, set **Source** to "Deploy from a branch", choose branch `main` and folder `/ (root)`, and save.
-4. After a minute or two the site is live at `https://YOUR-GITHUB-USERNAME.github.io`.
+- **Banner portrait:** save a photo as `images/portrait.jpg`, then remove the comment markers around the `<img class="banner-portrait">` line in `index.html`.
+- **Banner background:** save a wide image as `images/banner.jpg`, then in `assets/style.css` set `--banner-image: url("../images/banner.jpg");` and `--banner-overlay: 0.6;`.
+- **Card backgrounds:** add `style="background-image: url(images/your-photo.jpg)"` to a card's `<a class="dls-card">` tag.
+- **Research figures:** replace `images/placeholder.svg` in each `<img>` with your own file and update the `alt` text.
 
-Command-line version:
-
-```bash
-git init
-git add .
-git commit -m "Initial site"
-git branch -M main
-git remote add origin https://github.com/YOUR-GITHUB-USERNAME/YOUR-GITHUB-USERNAME.github.io.git
-git push -u origin main
-```
-
-## 3. Preview locally
+## Preview locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
-
-## Notes
-
-- Fonts (Literata, Public Sans) load from Google Fonts, with system fallbacks if offline.
-- The site follows the reader's light or dark setting automatically.
-- The navigation and footer are repeated in each HTML file, so a change to the menu needs to be made in all six pages.

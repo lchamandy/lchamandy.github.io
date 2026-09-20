@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Figure placeholder">
-  <rect width="1200" height="600" fill="#e8ebf2"/>
-  <g stroke="#9aa4b8" stroke-width="2" fill="none">
+  <rect width="1200" height="600" fill="#2c2c38"/>
+  <g stroke="#f0e68c" stroke-opacity="0.55" stroke-width="2" fill="none">
     <rect x="60" y="60" width="1080" height="480" rx="6" stroke-dasharray="10 8"/>
     <path d="M60 480 L330 300 L520 400 L760 200 L1140 440"/>
   </g>
-  <text x="600" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#4b566b">Figure placeholder</text>
-  <text x="600" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#6b768b">Replace with your image in the images/ folder</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#e2e8f0">Figure placeholder</text>
+  <text x="600" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#94a3b8">Replace with your image in the images/ folder</text>
 </svg>
