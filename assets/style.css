@@ -141,7 +141,8 @@ button:focus-visible {
   display: none;
   position: absolute;
   z-index: 1;
-  right: 9%;
+/*  right: 9%; */
+  right: 18%; 
   top: 50%;
 /*  width: min(34vw, 380px); */
   width: min(26vw, 280px); 
