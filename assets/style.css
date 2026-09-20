@@ -143,7 +143,8 @@ button:focus-visible {
   z-index: 1;
   right: 9%;
   top: 50%;
-  width: min(34vw, 380px);
+/*  width: min(34vw, 380px); */
+  width: min(26vw, 280px); 
   aspect-ratio: 4 / 5;
   object-fit: cover;
   transform: translateY(-50%);
